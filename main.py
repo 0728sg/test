@@ -9,7 +9,7 @@ from handlers.FSM_store_client import FSM_Store_client
 
 async def on_startup(_):
     for i in staff:
-        await bot.send_message(chat_id=i, text="Bot is active!",
+        await bot.send_message(chat_id=i, text="Bot activate!",
                                reply_markup=start_test)
         await db_main.sql_create()
 
